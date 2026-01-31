@@ -14,7 +14,20 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "Skill(extract-hefei-stores)",
+      "Bash(.venv/Scripts/python:*)",
+      "Skill(fill-stores)",
+      "Skill(fill-distances)",
+      "Skill(update-distance-cache)",
+      "Bash(ssh-keygen:*)",
+      "Bash(git config:*)",
+      "Bash(ssh-add:*)",
+      "Bash(ssh:*)",
+      "Bash(ssh-keyscan:*)",
+      "Bash(~/.ssh/known_hosts)",
+      "Bash(GIT_SSH_COMMAND=\"ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes\" git push:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
