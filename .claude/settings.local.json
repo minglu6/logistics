@@ -10,7 +10,7 @@
       "Bash(git init:*)",
       "Bash(git add:*)",
       "Bash(git reset:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Logistics billing management system\n\n- Hefei and Jiangxi warehouse billing tools\n- Distance cache and store name extraction\n- Claude Code skills for automated processing\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Logistics billing management system\n\n- Hefei and Jiangxi warehouse billing tools\n- Distance cache and store name extraction\n- Claude Code skills for automated processing\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
@@ -28,7 +28,10 @@
       "Bash(~/.ssh/known_hosts)",
       "Bash(GIT_SSH_COMMAND=\"ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes\" git push:*)",
       "Bash(git commit:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(chmod:*)",
+      "Bash(.venv/bin/python:*)",
+      "Bash(git rebase:*)"
     ]
   }
 }
