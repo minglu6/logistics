@@ -104,12 +104,19 @@ def fill_excel_data(source_excel, txt_data, output_excel, year=2026):
     print(f"从第 {first_empty_row} 行开始填充数据")
 
     # 获取当前最大序号
-    current_seq = ws[f'A{first_empty_row - 1}'].value
+    raw_seq = ws[f'A{first_empty_row - 1}'].value
+    try:
+        current_seq = int(raw_seq) if raw_seq is not None else None
+    except (ValueError, TypeError):
+        current_seq = None
     if current_seq is None:
         # 向上查找最后一个有序号的行
         for i in range(first_empty_row - 1, 1, -1):
             if ws[f'A{i}'].value is not None:
-                current_seq = ws[f'A{i}'].value
+                try:
+                    current_seq = int(ws[f'A{i}'].value)
+                except (ValueError, TypeError):
+                    current_seq = 0
                 break
         if current_seq is None:
             current_seq = 0

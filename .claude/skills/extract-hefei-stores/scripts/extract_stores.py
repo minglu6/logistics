@@ -90,14 +90,14 @@ def main():
 
     excel_files = []
     for filename in os.listdir(input_dir):
-        if filename.endswith('.xlsx') and filename.startswith('临努'):
+        if filename.endswith('.xlsx') and (filename.startswith('临努') or re.match(r'^\d+\.\d+\.xlsx$', filename)):
             date_str = extract_date_from_filename(filename)
             if date_str:
                 file_path = os.path.join(input_dir, filename)
                 excel_files.append((date_str, file_path, filename))
 
     if not excel_files:
-        print(f"Error: No Excel files found matching pattern '临努*.xlsx' in {input_dir}")
+        print(f"Error: No Excel files found matching pattern '临努*.xlsx' or '日期.xlsx' in {input_dir}")
         sys.exit(1)
 
     # 按日期排序
