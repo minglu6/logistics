@@ -32,7 +32,8 @@
       "Bash(chmod:*)",
       "Bash(.venv/bin/python:*)",
       "Bash(git rebase:*)",
-      "Bash(.venv/bin/pip install:*)"
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(/Users/luming/project/logistics/.venv/bin/python:*)"
     ]
   }
 }
