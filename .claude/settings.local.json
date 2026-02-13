@@ -33,7 +33,12 @@
       "Bash(.venv/bin/python:*)",
       "Bash(git rebase:*)",
       "Bash(.venv/bin/pip install:*)",
-      "Bash(/Users/luming/project/logistics/.venv/bin/python:*)"
+      "Bash(/Users/luming/project/logistics/.venv/bin/python:*)",
+      "Bash(git -C /Users/luming/project/logistics status)",
+      "Bash(git -C /Users/luming/project/logistics diff --stat)",
+      "Bash(git -C /Users/luming/project/logistics log --oneline -5)",
+      "Bash(git -C /Users/luming/project/logistics add \".claude/settings.local.json\")",
+      "Bash(git -C /Users/luming/project/logistics commit:*)"
     ]
   }
 }
