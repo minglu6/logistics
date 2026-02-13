@@ -38,7 +38,8 @@
       "Bash(git -C /Users/luming/project/logistics diff --stat)",
       "Bash(git -C /Users/luming/project/logistics log --oneline -5)",
       "Bash(git -C /Users/luming/project/logistics add \".claude/settings.local.json\")",
-      "Bash(git -C /Users/luming/project/logistics commit:*)"
+      "Bash(git -C /Users/luming/project/logistics commit:*)",
+      "Bash(git -C /Users/luming/project/logistics push)"
     ]
   }
 }
